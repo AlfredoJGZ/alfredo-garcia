@@ -1,0 +1,62 @@
+:root{
+  --main-blue-color:#07889B;
+}
+:root{
+  --main-orange-color:#E37222; 
+}
+@font-face{
+  font-family: 'Baloo';
+  src: url('../fonts/BalooTammudu2-Regular.ttf');
+}
+/* Utilidades */
+
+.App{
+  background-color: #EBFCFF;
+  font-family: 'Baloo';
+}
+.main-container{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.fs-40{
+  font-size: 40px;
+}
+.fs-80{
+  font-size: 80px;
+}
+.fc-main-blue{
+  color: var(--main-blue-color);
+}
+.fc-main-orange{
+  color: var(--main-orange-color);
+}
+
+/*Imagen hero*/
+
+.hero-img{
+  background-image: url('../images/hero.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 602px;
+  height: 465px;
+}
+
+/*Estilos para botones azules*/
+
+.blue-btn{
+  transition: all 0.3s ease-in-out;
+  background-color: var(--main-blue-color);
+  color: #FFFFFF;
+  font-size: 40px;
+  height: 42px;
+  border: none;
+}
+.blue-btn:hover{
+  background-color: #044f5a;
+}
+.blue-btn:active{
+  outline: none;
+}
+.blue-btn:focus{
+  outline: none;
+}
