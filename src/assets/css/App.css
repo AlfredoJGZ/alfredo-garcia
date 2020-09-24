@@ -24,6 +24,7 @@
 .fs-80{
   font-size: 80px;
 }
+
 .fc-main-blue{
   color: var(--main-blue-color);
 }
@@ -31,14 +32,31 @@
   color: var(--main-orange-color);
 }
 
-/*Imagen hero*/
+/*Encabezado*/
 
+.presentacion{
+  height: calc(100vh/2);
+}
 .hero-img{
   background-image: url('../images/hero.svg');
   background-repeat: no-repeat;
   background-size: contain;
-  width: 602px;
-  height: 465px;
+  background-position: center center;
+  width: calc(100% - 4px);
+  height: calc(100vh/2); /*465*/
+}
+
+@media(min-width: 768px){
+  h1{
+    font-size: 80px !important;
+  }
+  .hero-img{
+    height: 456px;
+    width: calc(100vw/2);
+  }
+  .presentacion{
+    width: calc(100vw/2);
+  }
 }
 
 /*Estilos para botones azules*/
