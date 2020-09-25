@@ -1,14 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './assets/css/App.css';
 import './assets/css/bootstrap.min.css';
-import Header from './components/Header'
+import Header from './components/Header'; 
+import Location from './components/Location'; 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header main-container">
         <Header />
+        <Location />
       </header>
     </div>
   );
