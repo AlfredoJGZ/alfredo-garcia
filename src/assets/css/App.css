@@ -38,6 +38,9 @@
 .fc-main-orange{
   color: var(--main-orange-color);
 }
+.bg-main-orange{
+  background-color: var(--main-orange-color);
+}
 
 /*Encabezado*/
 
@@ -50,7 +53,7 @@
   background-size: contain;
   background-position: center center;
   width: calc(100% - 4px);
-  height: calc(100vh/2); /*465*/
+  height: calc(100vh/2);
 }
 
 @media(min-width: 768px){
@@ -97,4 +100,35 @@
   .location{
     max-width: 80%;
   }
+}
+
+/*ESTILOS A SERVICIOS*/
+
+.service h2{
+  height: 38px;
+  max-width: 95%;
+  background-color: var(--main-orange-color);
+  color: #F5F5F5;
+}
+.service p{
+  max-width: 95%;
+}
+.service-img{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: calc(100% - 4px);
+  height: calc(100vh/2);
+}
+
+#fade-01{
+  background-image: url('../images/frontend.svg');
+}
+
+#fade-02{
+  background-image: url('../images/backend.svg');
+}
+
+#fade-03{
+  background-image: url('../images/mobile.svg');
 }
