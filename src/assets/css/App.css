@@ -110,6 +110,7 @@
   background-color: var(--main-orange-color);
   color: #F5F5F5;
 }
+
 .service p{
   max-width: 95%;
 }
@@ -131,4 +132,22 @@
 
 #fade-03{
   background-image: url('../images/mobile.svg');
+}
+
+@media(min-width: 768px){
+  .service h2{
+    height: 42px;
+    font-size: 40px;
+  }
+  .service{
+    max-width: 80%;
+  }
+  .service p{
+    font-size: 24px;
+    width: 50%;
+    line-height: 2;
+  }
+  .service-img{
+    width: 50%;
+  }
 }
