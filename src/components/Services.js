@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class Services extends Component{
 
     state = {
+        title:'',
         desc:''
     }
 
@@ -20,16 +21,19 @@ class Services extends Component{
     componentDidMount(){
         if(this.props.title === 'frontend'){
             this.setState({
+                title: 'Desarrollo Front-End',
                 desc: this.frontDesc
             })
         }
         if(this.props.title === 'backend'){
             this.setState({
+                title: 'Desarrollo Back-End',
                 desc: this.backDesc
             })
         }
         if(this.props.title === 'mobile'){
             this.setState({
+                title: 'Desarrollo Móvil',
                 desc: this.mobileDesc
             })
         }
@@ -37,12 +41,13 @@ class Services extends Component{
 
     render(){
         return(
-                   
-            <p className='fc-main-blue text-center mr-md-2 d-md-flex align-items-center'>{
-                this.state.desc
-                }
-            </p>
-            
+            <div className='d-flex flex-column align-items-center justify-content-around service-desc'>
+                <h2 className='rounded px-1 px-md-3 py-2 mb-4 mb-md-2 text-center d-inline-block'>{this.state.title}</h2>       
+                <p className='fc-main-blue text-center mb-0 d-md-flex align-items-center'>{
+                    this.state.desc
+                    }
+                </p>
+            </div>
         );
     }
 }

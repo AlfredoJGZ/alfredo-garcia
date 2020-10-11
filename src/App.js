@@ -49,33 +49,34 @@ class App extends Component{
         </header>
         <main>
         {/* Servicio de desarrollo front-end*/}
-          <section className='mt-4 main-container service d-flex flex-column align-items-center'>
-            <h2 className='rounded px-1 px-md-3 py-2 mb-4 mb-md-5 text-center'>Desarrollo Front-End</h2>
-            <div className='d-md-flex'>
+          <section className='mt-4 mt-md-5 main-container service d-flex flex-column align-items-center'>
+            <div className='d-md-flex w-100'>
               <Services title='frontend'/>
               {this.state.fadeOne === true ?
-              <ServiceImg id='fade-01' position='right'/> : 
+              <ServiceImg id='fade-01' /> : 
               <div className='service-img'>
               </div> }
             </div>
           </section>
         {/*Servicio de desarrollo backend*/}
-          <section className='mt-4 main-container service d-flex flex-column align-items-center'>
-            <h2 className='rounded px-1 px-md-3 py-2 mb-4 mb-md-5 text-center'>Desarrollo Back-End</h2>
-            <Services title='backend'/>
-            {this.state.fadeTwo === true ?
-            <ServiceImg id='fade-02' position='left'/> : 
-            <div className='service-img'>
-            </div> }
-          </section>
-        {/*Servicio de desarrollo mobile app*/}
-          <section className='mt-4 main-container service d-flex flex-column align-items-center'>
-            <h2 className='rounded px-1 px-md-3 py-2 mb-4 mb-md-5 text-center'>Desarrollo Mobile</h2>
-              <Services title='mobile'/>
-              {this.state.fadeThree === true ?
-              <ServiceImg id='fade-03' position='right'/> : 
+          <section className='mt-4 mt-md-5 main-container service d-flex flex-column align-items-center'>
+            <div className='d-md-flex flex-row-reverse'>
+              <Services title='backend'/>
+              {this.state.fadeTwo === true ?
+              <ServiceImg id='fade-02' /> : 
               <div className='service-img'>
               </div> }
+            </div> 
+          </section>
+        {/*Servicio de desarrollo mobile app*/}
+          <section className='mt-4 mt-md-5 main-container service d-flex flex-column align-items-center'>
+            <div className='d-md-flex'>
+              <Services title='mobile'/>
+              {this.state.fadeThree === true ?
+              <ServiceImg id='fade-03' /> : 
+              <div className='service-img'>
+              </div> }
+            </div>
           </section>
         </main>
       </div>
