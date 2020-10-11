@@ -42,7 +42,7 @@ class Services extends Component{
     render(){
         return(
             <div className='d-flex flex-column align-items-center justify-content-around service-desc'>
-                <h2 className='rounded px-1 px-md-3 py-2 mb-4 mb-md-2 text-center d-inline-block'>{this.state.title}</h2>       
+                <h2 className='rounded px-1 px-md-3 py-2 mb-4 mb-md-2 text-center d-inline-block sub-header'>{this.state.title}</h2>       
                 <p className='fc-main-blue text-center mb-0 d-md-flex align-items-center'>{
                     this.state.desc
                     }

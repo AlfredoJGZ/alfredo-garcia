@@ -6,7 +6,7 @@ import { faLanguage } from '@fortawesome/free-solid-svg-icons';
 class Location extends Component{
     render(){
         return(
-        <div className='main-container location shadow px-2 py-4 fc-main-orange rounded mt-4 mb-md-5 d-flex flex-column flex-md-row
+        <div className='main-container location shadow px-2 py-4 fc-main-orange rounded shadow d-flex flex-column flex-md-row
              justify-content-center align-items-center justify-content-md-around'>
             <div className='fs-40 d-flex flex-column flex-md-row justify-content-center align-items-center text-center'>
                 <FontAwesomeIcon icon={faMapMarkerAlt} />

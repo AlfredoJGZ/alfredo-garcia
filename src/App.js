@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Location from './components/Location'; 
 import Services from './components/Services'; 
 import ServiceImg from './components/ServiceImg';
+import Tools from './components/Tools';
+import Contact from './components/Contact';
 
 class App extends Component{
 
@@ -79,6 +81,12 @@ class App extends Component{
             </div>
           </section>
         </main>
+        <section className='mt-4 mb-md-5'>
+          <Tools />
+        </section>
+        <section className='mt-4 pb-4'>
+          <Contact />
+        </section>
       </div>
     );
   }
